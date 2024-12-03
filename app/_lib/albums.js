@@ -640,7 +640,7 @@ export const albums = [
     criticsRate: "80",
     dateRelease: "2024-august-23",
     cover:
-      "https://cdn2.albumoftheyear.org/375x/album/915476-solemn_143731.jpg",
+      "https://cdn2.albumoftheyear.org/375x/album/995117-songs-of-blood-and-mire_132624.jpg",
     spotifyLink: "https://open.spotify.com/album/2AljWxmNh0mQPFAKAwKlIt",
     genres: ["Melodic Black Metal"],
   },
