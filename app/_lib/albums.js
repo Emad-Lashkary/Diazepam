@@ -870,7 +870,7 @@ export const albums = [
   },
   {
     artist: "Knocked Loose",
-    album: "You Won't Go Before You're Supposed To",
+    album: "You Wont Go Before Youre Supposed To",
     rank: "70",
     myRate: "80",
     criticsRate: "88",
@@ -919,7 +919,7 @@ export const albums = [
   },
   {
     artist: "Alcest",
-    album: "Les Chants de l'Aurore",
+    album: "Les Chants de l Aurore",
     rank: "74",
     myRate: "80",
     criticsRate: "80",
@@ -967,7 +967,7 @@ export const albums = [
     genres: ["Metalcore"],
   },
   {
-    artist: "Caligula's Horse",
+    artist: "Caligulas Horse",
     album: "Charcoal Grace",
     rank: "78",
     myRate: "79",
@@ -1141,7 +1141,7 @@ export const albums = [
   },
   {
     artist: "Trhä",
-    album: "∫um'ad∂ejja cavvaj",
+    album: "∫um ad∂ejja cavvaj",
     rank: "92",
     myRate: "76",
     criticsRate: "NR",
