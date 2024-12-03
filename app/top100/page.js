@@ -1,5 +1,6 @@
 import AlbumsList from "../_components/AlbumsList";
 import { email, telegram } from "../_lib/vars";
+import ScrollToTopButton from "../_components/ScrollToTopButton";
 
 function A({ children, href }) {
   return (
@@ -12,9 +13,9 @@ function A({ children, href }) {
   );
 }
 
-export default function page() {
+export default function Page() {
   return (
-    <div className="bg-primary_900/85 sm:h-[80vh] h-[85vh] px-6 sm:px-56 py-4 overflow-scroll no-scrollbar">
+    <div className="bg-primary_900/85 sm:h-[80vh] h-[85vh] px-6 sm:px-56 py-4 overflow-scroll no-scrollbar flex flex-col items-center relative">
       <h3 className="sm:text-xl text-base text-primary_100 tracking-wider">
         This is my personal ranking of the best rock and metal albums of 2024.
         My selections are entirely based on my own taste and not on technical
@@ -22,7 +23,15 @@ export default function page() {
         free to reach out to me via <A href={email}>email</A> or through the
         link in my <A href={telegram}>Telegram channel</A> bio.
       </h3>
+      <p className="mt-4 sm:text-md text-primary_100 tracking-wider w-[90%]">
+        Although the last two albums (BMTH and LP) didn't make it to my top 100
+        albums of 2024, I've included them to ensure this list features some of
+        the year's most popular releases. My rankings and ratings are made
+        without considering the albums' lyrics or any controversies surrounding
+        them.
+      </p>
       <AlbumsList />
+      <ScrollToTopButton />
     </div>
   );
 }
