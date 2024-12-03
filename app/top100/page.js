@@ -24,11 +24,11 @@ export default function Page() {
         link in my <A href={telegram}>Telegram channel</A> bio.
       </h3>
       <p className="mt-4 sm:text-md text-primary_100 tracking-wider w-[90%]">
-        Although the last two albums (BMTH and LP) didn't make it to my top 100
-        albums of 2024, I've included them to ensure this list features some of
-        the year's most popular releases. My rankings and ratings are made
-        without considering the albums' lyrics or any controversies surrounding
-        them.
+        Although the last two albums (BMTH and LP) didn&apos;t make it to my top
+        100 albums of 2024, I&apos;ve included them to ensure this list features
+        some of the year&apos;s most popular releases. My rankings and ratings
+        are made without considering the albums&apos; lyrics or any
+        controversies surrounding them.
       </p>
       <AlbumsList />
       <ScrollToTopButton />
