@@ -1,3 +1,5 @@
+"use client";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
 function Album({
@@ -11,6 +13,28 @@ function Album({
   spotifyLink,
   genres,
 }) {
+  const [isVisible, setIsVisible] = useState(false);
+  const albumRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      { threshold: 0.1 } // Adjust threshold as needed
+    );
+
+    if (albumRef.current) {
+      observer.observe(albumRef.current);
+    }
+
+    return () => {
+      if (albumRef.current) {
+        observer.unobserve(albumRef.current);
+      }
+    };
+  }, []);
+
   const getBackgroundColor = (rank) => {
     switch (rank) {
       case "1":
@@ -28,7 +52,10 @@ function Album({
 
   return (
     <div
-      className={`${getBackgroundColor(
+      ref={albumRef}
+      className={`${
+        isVisible ? "animate-fadeIn" : "opacity-0"
+      } ${getBackgroundColor(
         rank
       )} rounded-lg shadow-lg p-6 mb-6 transform transition duration-500 sm:hover:scale-[1.01]`}
     >
@@ -38,7 +65,6 @@ function Album({
             src={cover}
             alt={`${album} cover`}
             fill
-            objectFit="cover"
             className="rounded-lg hover:scale-105 transition-all"
           />
         </div>

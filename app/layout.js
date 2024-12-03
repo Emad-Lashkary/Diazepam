@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
             />
           </div>
         </div>
-        <main className="overflow-scroll sm:h-[80vh] h-[85vh] no-scrollbar">
+        <main className="overflow-scroll sm:h-[82vh] h-[85vh] no-scrollbar">
           {children}
         </main>
         <Footer />

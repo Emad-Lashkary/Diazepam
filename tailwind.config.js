@@ -24,6 +24,15 @@ module.exports = {
         secondaryDark: "#58130e",
         secondaryDarker: "#2c0907",
       },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: 0, transform: "translateY(20px)" },
+          "100%": { opacity: 1, transform: "translateY(0)" },
+        },
+      },
+      animation: {
+        fadeIn: "fadeIn var(--fade-duration, 0.5s) ease-out",
+      },
     },
   },
   plugins: [],

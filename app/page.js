@@ -13,8 +13,13 @@ export default function Home() {
       <h2 className="sm:text-3xl text-xl pt-10 text-primary_100 sm:tracking-widest tracking-wide text-center">
         Welcome to my Personal Metal website -Diazepam-
       </h2>
-      <div className="p-10 mt-[40%] sm:mt-0 sm:grid sm:grid-cols-[3fr_2fr] w-full h-full">
-        <div></div>
+      <div className="p-10 mt-[20%] sm:mt-0 sm:grid sm:grid-cols-[3fr_2fr] w-full h-full">
+        <div className="flex justify-center mb-14">
+          <p className="sm:w-[50%] w-[80%] text-center font-thin tracking-wide text-base">
+            Additional top lists will be added to this website by the end of
+            December 2024. Plus, expect more features and enhancements to come!
+          </p>
+        </div>
         <div className="flex flex-col gap-2">
           <a
             href={telegram}
