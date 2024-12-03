@@ -47,7 +47,7 @@ export default function Page() {
       >
         These are my top metal albums of 2024. Albums released in December 2024
         will be included in the 2025 list. Some rankings might be unpopular—for
-        instance, Knocked Loose at 80th or Poppy sharing a spot with Opeth—but
+        instance, Knocked Loose at 70th or Poppy sharing a spot with Opeth—but
         as I mentioned, this is my personal ranking and not a critical
         assessment. I hope you enjoy exploring these albums as much as I did!
       </p>
