@@ -15,7 +15,10 @@ function A({ children, href }) {
 
 export default function Page() {
   return (
-    <div className="bg-primary_900/85 sm:h-[80vh] h-[85vh] px-6 sm:px-56 py-4 overflow-scroll no-scrollbar flex flex-col items-center relative">
+    <div
+      id="scrollContainer"
+      className="bg-primary_900/70 sm:h-[80vh] h-[85vh] px-6 sm:px-56 py-4 overflow-scroll no-scrollbar flex flex-col items-center relative"
+    >
       <h3 className="sm:text-xl text-base text-primary_100 tracking-wider">
         This is my personal ranking of the best rock and metal albums of 2024.
         My selections are entirely based on my own taste and not on technical

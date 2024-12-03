@@ -32,3 +32,13 @@ body {
 .no-scrollbar::-webkit-scrollbar {
   display: none; /* Chrome, Safari, and Opera */
 }
+
+@font-face {
+  font-family: "Purevil";
+  src: url("/fonts/Purevil-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.header-logo {
+  font-family: "Purevil", sans-serif;
+}
