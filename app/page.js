@@ -1,6 +1,5 @@
-import { FaArrowRight } from "react-icons/fa";
-
 import Link from "next/link";
+import { FaArrowRight } from "react-icons/fa";
 import { aoty, telegram } from "./_lib/vars";
 
 export const metadata = {
@@ -9,52 +8,166 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className="w-full h-[100%] justify-center items-center p-5 sm:px-12 flex flex-col">
-      <h2 className="sm:text-3xl text-xl pt-10 text-primary_100 sm:tracking-widest tracking-wide text-center">
-        Welcome to my Personal Metal website -Diazepam-
+    <div className="w-full h-[100%] flex flex-col items-center p-5 sm:px-12 bg-gradient-to-b from-primary_900/50 via-primary_900/70 to-primary_950/90 overflow-scroll no-scrollbar">
+      <h2 className="sm:text-5xl text-3xl pt-10 text-primary_100 sm:tracking-widest tracking-wide text-center font-extrabold animate-fadeIn">
+        Welcome to Diazepam - Your Hub for the Best Metal Music
       </h2>
-      <div className="p-10 mt-[20%] sm:mt-0 sm:grid sm:grid-cols-[3fr_2fr] w-full h-full">
-        <div className="flex justify-center mb-14">
-          <p className="sm:w-[50%] w-[80%] text-center font-thin tracking-wide text-base">
-            Additional top lists will be added to this website by the end of
-            December 2024. Plus, expect more features and enhancements to come!
+      <p className="text-lg text-primary_300 mt-4 max-w-3xl text-center animate-slideLeft">
+        Dive deep into the world of metal music with our curated collections of
+        the finest albums and EPs. Stay tuned for more features and enhancements
+        coming soon!
+      </p>
+      <div className="p-10 mt-16 sm:mt-12 sm:grid sm:grid-cols-[3fr_2fr] w-full h-full animate-fadeIn">
+        <div className="flex flex-col justify-center mb-14 sm:mb-0 sm:pr-10">
+          <p className="sm:w-[80%] w-[90%] text-center sm:text-left font-thin tracking-wide text-base text-primary_200">
+            New top lists will be added to this website by the end of December
+            2024. Plus, expect more features and enhancements to come. Explore
+            our existing lists and get ready for an exceptional musical journey!
           </p>
+          <Link
+            href="/about"
+            className="mt-8 sm:mt-12 px-8 py-4 bg-secondaryBase text-primary_100 text-lg font-bold rounded-md hover:bg-secondaryLight transition duration-300 text-center"
+          >
+            Learn More About Diazepam
+          </Link>
         </div>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-4">
           <a
             href={telegram}
-            className="flex flex-row gap-2 items-center bg-primary_300/50 text-primary_900 sm:text-lg text-sm font-medium px-5 py-3 h-full rounded-md hover:bg-primary_300/60 transition-all"
+            className="flex flex-row gap-3 items-center bg-primary_700/70 text-primary_100 sm:text-lg text-sm font-medium px-6 py-4 rounded-md hover:bg-primary_700 transition-all"
           >
             <FaArrowRight />
-            Telegram channel:{" "}
+            Telegram Channel:{" "}
             <span className="underline underline-offset-4 px-1">@emdpills</span>
           </a>
           <Link
             href="/top100"
-            className="flex flex-row gap-2 items-center bg-secondaryDarker/80 text-secondaryLighter sm:text-lg text-sm font-medium px-5 py-3 h-full rounded-md hover:bg-secondaryDarker transition-all"
+            className="flex flex-row gap-3 items-center bg-secondaryDarker/80 text-secondaryLighter sm:text-lg text-sm font-medium px-6 py-4 rounded-md hover:bg-secondaryDarker transition-all"
           >
             <FaArrowRight />
-            My 2024 Top 100 album rank
+            My 2024 Top 100 Albums
           </Link>
           <Link
             href="/topEps"
-            className="flex flex-row gap-2 items-center bg-primary_300/50 text-primary_900 sm:text-lg text-sm font-medium px-5 py-3 h-full rounded-md hover:bg-primary_300/60 transition-all"
+            className="flex flex-row gap-3 items-center bg-primary_700/70 text-primary_100 sm:text-lg text-sm font-medium px-6 py-4 rounded-md hover:bg-primary_700 transition-all"
           >
             <FaArrowRight />
-            My 2024 Top 100 Eps rank
+            My 2024 Top EPs
           </Link>
-          <div className="flex flex-row gap-2 items-center bg-primary_300/50 text-primary_900 sm:text-lg text-sm font-medium px-5 py-3 h-full rounded-md hover:bg-primary_300/60 transition-all">
+          <Link
+            href="/favorites"
+            className="flex flex-row gap-3 items-center bg-primary_700/70 text-primary_100 sm:text-lg text-sm font-medium px-6 py-4 rounded-md hover:bg-primary_700 transition-all"
+          >
             <FaArrowRight />
-            My All time fav albums
-          </div>
+            My All Time Favorite Albums
+          </Link>
           <a
             href={aoty}
-            className="flex flex-row gap-2 items-center bg-primary_300/50 text-primary_900 sm:text-lg text-sm font-medium px-5 py-3 h-full rounded-md hover:bg-primary_300/60 transition-all"
+            className="flex flex-row gap-3 items-center bg-primary_700/70 text-primary_100 sm:text-lg text-sm font-medium px-6 py-4 rounded-md hover:bg-primary_700 transition-all"
           >
             <FaArrowRight />
-            My AOTY page
+            My AOTY Page
           </a>
         </div>
+      </div>
+      <div className="mt-16 text-center">
+        <h2 className="text-4xl font-bold mb-6">Featured Albums</h2>
+        <p className="text-primary_300 mb-8 max-w-lg mx-auto">
+          Discover some of the standout albums that have defined the metal
+          scene. From legendary releases to modern masterpieces, explore the
+          music that has made a lasting impact.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="bg-primary_800 p-6 rounded-lg shadow-md hover:shadow-xl transition-all transform hover:scale-105">
+            <h3 className="text-2xl font-semibold text-primary_100 mb-3">
+              Album Title 1
+            </h3>
+            <p className="text-primary_300 mb-4">By Artist Name</p>
+            <p className="text-primary_200 mb-6">
+              A brief description of why this album is featured. Highlight its
+              impact, uniqueness, and any standout tracks.
+            </p>
+            <Link
+              href="/album/1"
+              className="text-secondaryLighter hover:text-secondaryLight transition duration-300"
+            >
+              Learn More
+            </Link>
+          </div>
+          <div className="bg-primary_800 p-6 rounded-lg shadow-md hover:shadow-xl transition-all transform hover:scale-105">
+            <h3 className="text-2xl font-semibold text-primary_100 mb-3">
+              Album Title 2
+            </h3>
+            <p className="text-primary_300 mb-4">By Artist Name</p>
+            <p className="text-primary_200 mb-6">
+              A brief description of why this album is featured. Highlight its
+              impact, uniqueness, and any standout tracks.
+            </p>
+            <Link
+              href="/album/2"
+              className="text-secondaryLighter hover:text-secondaryLight transition duration-300"
+            >
+              Learn More
+            </Link>
+          </div>
+          <div className="bg-primary_800 p-6 rounded-lg shadow-md hover:shadow-xl transition-all transform hover:scale-105">
+            <h3 className="text-2xl font-semibold text-primary_100 mb-3">
+              Album Title 3
+            </h3>
+            <p className="text-primary_300 mb-4">By Artist Name</p>
+            <p className="text-primary_200 mb-6">
+              A brief description of why this album is featured. Highlight its
+              impact, uniqueness, and any standout tracks.
+            </p>
+            <Link
+              href="/album/3"
+              className="text-secondaryLighter hover:text-secondaryLight transition duration-300"
+            >
+              Learn More
+            </Link>
+          </div>
+        </div>
+      </div>
+      <div className="mt-16 text-center">
+        <h2 className="text-4xl font-bold mb-6">Upcoming Features</h2>
+        <p className="text-primary_300 mb-8 max-w-lg mx-auto">
+          We&apos;re constantly working to improve this site. Here&apos;s a
+          sneak peek at some of the features we&apos;re planning to roll out
+          soon.
+        </p>
+        <ul className="list-disc list-inside text-left max-w-lg mx-auto text-primary_200">
+          <li className="mb-2">
+            Interactive playlists that you can customize and share.
+          </li>
+          <li className="mb-2">
+            In-depth album reviews and ratings by our team of experts.
+          </li>
+          <li className="mb-2">
+            Exclusive interviews with top artists and bands.
+          </li>
+          <li className="mb-2">
+            Enhanced search functionality to help you find your favorite music
+            faster.
+          </li>
+          <li className="mb-2">
+            Monthly newsletters with the latest news, trends, and releases in
+            the metal world.
+          </li>
+        </ul>
+      </div>
+      <div className="mt-16 text-center">
+        <h2 className="text-4xl font-bold mb-6">Join the Community</h2>
+        <p className="text-primary_300 mb-8 max-w-lg mx-auto">
+          Be part of our growing community of metal music enthusiasts. Share
+          your thoughts, join discussions, and stay updated with the latest
+          news.
+        </p>
+        <Link
+          href="/community"
+          className="bg-secondaryBase text-primary_100 py-3 px-8 rounded-full hover:bg-secondaryLight transition duration-300"
+        >
+          Join Now
+        </Link>
       </div>
     </div>
   );

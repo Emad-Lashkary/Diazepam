@@ -1,6 +1,8 @@
 import AlbumsList from "../_components/AlbumsList";
 import { email, telegram } from "../_lib/vars";
 import ScrollToTopButton from "../_components/ScrollToTopButton";
+import { Suspense } from "react";
+import Spinner from "../_components/Spinner";
 
 export const metadata = {
   title: "Top 100 | Diazepam",
@@ -40,7 +42,9 @@ export default function Page() {
         are made without considering the albums&apos; lyrics or any
         controversies surrounding them.
       </p>
-      <AlbumsList />
+      <Suspense fallback={<Spinner />}>
+        <AlbumsList />
+      </Suspense>
       <div className="flex flex-col  bg-primary_900/70 rounded-lg">
         <p
           style={{ "--fade-duration": "1.5s" }}

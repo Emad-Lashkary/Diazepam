@@ -1,11 +1,10 @@
-import Header from "./_components/Header";
-import home from "@/public/home.jpg";
-import homeM from "@/public/home-m.jpg";
-import Image from "next/image";
 import "@/app/globals.css";
+import homeM from "@/public/home-m.jpg";
+import home from "@/public/home.jpg";
+import Image from "next/image";
+import Header from "./_components/Header";
 
 import { Nunito } from "next/font/google";
-import Footer from "./_components/Footer";
 
 const font = Nunito({
   subsets: ["latin"],
@@ -38,10 +37,9 @@ export default function RootLayout({ children }) {
             />
           </div>
         </div>
-        <main className="overflow-scroll sm:h-[82vh] h-[85vh] no-scrollbar">
+        <main className="overflow-scroll sm:h-[87vh] h-[90vh] no-scrollbar">
           {children}
         </main>
-        <Footer />
       </body>
     </html>
   );

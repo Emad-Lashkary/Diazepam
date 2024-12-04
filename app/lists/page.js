@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { FaCompactDisc, FaHeadphonesAlt, FaStar } from "react-icons/fa";
 import { GiGuitar, GiMicrophone, GiPodiumWinner } from "react-icons/gi";
-import { telegram } from "../_lib/vars";
+import { email, telegram } from "../_lib/vars";
 
 export const metadata = {
   title: "Lists | Diazepam",
@@ -41,7 +41,7 @@ export default function Page() {
           href="/top100"
           icon={GiPodiumWinner}
           title="Top 100 Albums"
-          description="A comprehensive list of my favorite 100 albums of 2024, spanning various genres and styles."
+          description="A comprehensive list of my favorite 100 albums of 2024, spanning various metal genres."
         />
         <ListLink
           href="/topEps"
@@ -78,11 +78,11 @@ export default function Page() {
       <div className="mt-16 text-center">
         <h2 className="text-3xl font-bold mb-6">Suggest a List!</h2>
         <p className="text-primary_300 mb-8 max-w-lg mx-auto">
-          Have an idea for a new music list? Let us know and we&apos;ll consider
-          adding it to the site. Your suggestions help us grow and improve!
+          Have an idea for a new music list? Let me know and I&apos;ll consider
+          adding it to the site. Your suggestions help me grow and improve!
         </p>
         <a
-          href="https://mail.google.com/mail/?view=cm&fs=1&to=emad.lashkar@gmail.com"
+          href={email}
           className="bg-secondaryBase text-primary_100 py-3 px-8 rounded-full hover:bg-secondaryLight transition duration-300"
         >
           Suggest Now

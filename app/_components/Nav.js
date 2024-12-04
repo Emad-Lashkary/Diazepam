@@ -2,9 +2,24 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { FaHome, FaListUl, FaEnvelope } from "react-icons/fa";
+import { FaHome, FaListUl, FaEnvelope, FaInfoCircle } from "react-icons/fa";
 import { TiThMenu } from "react-icons/ti";
 import { CiMenuKebab } from "react-icons/ci";
+
+function NavItem({ href, icon: Icon, label, onClick }) {
+  return (
+    <li className="px-4 flex items-center transition-all rounded-l-md duration-300 ease-in-out hover:bg-primary_800 hover:translate-x-1">
+      <Icon className="mr-2 text-secondaryLighter" />
+      <Link
+        href={href}
+        onClick={onClick}
+        className="py-4 w-full text-primary_100 hover:text-secondaryLighter"
+      >
+        {label}
+      </Link>
+    </li>
+  );
+}
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -45,26 +60,27 @@ function Nav() {
         </div>
       </button>
       {isOpen && (
-        <div className="absolute top-full right-0 mt-2 bg-primary_900 w-48 rounded-md shadow-lg z-50 animate-slideLeft">
-          <ul className="flex flex-col">
-            <li className="p-4 flex items-center hover:bg-primary_800 transition duration-300">
-              <FaHome className="mr-2" />
-              <Link href="/" onClick={closeNav}>
-                Home
-              </Link>
-            </li>
-            <li className="p-4 flex items-center hover:bg-primary_800 transition duration-300">
-              <FaListUl className="mr-2" />
-              <Link href="/lists" onClick={closeNav}>
-                Lists
-              </Link>
-            </li>
-            <li className="p-4 flex items-center hover:bg-primary_800 transition duration-300">
-              <FaEnvelope className="mr-2" />
-              <Link href="/route3" onClick={closeNav}>
-                Contact Me
-              </Link>
-            </li>
+        <div className="absolute top-full right-0 mt-2 w-48 rounded-md shadow-lg z-50 bg-gradient-to-r from-primary_700 to-primary_900 transition-all duration-300 animate-slideLeft">
+          <ul className="flex flex-col px-1">
+            <NavItem href="/" icon={FaHome} label="Home" onClick={closeNav} />
+            <NavItem
+              href="/lists"
+              icon={FaListUl}
+              label="Lists"
+              onClick={closeNav}
+            />
+            <NavItem
+              href="/contact"
+              icon={FaEnvelope}
+              label="Contact Me"
+              onClick={closeNav}
+            />
+            <NavItem
+              href="/about"
+              icon={FaInfoCircle}
+              label="About"
+              onClick={closeNav}
+            />
           </ul>
         </div>
       )}
