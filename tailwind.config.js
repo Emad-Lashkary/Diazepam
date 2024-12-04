@@ -29,9 +29,24 @@ module.exports = {
           "0%": { opacity: 0, transform: "translateY(20px)" },
           "100%": { opacity: 1, transform: "translateY(0)" },
         },
+        slideLeft: {
+          "0%": { opacity: 0, transform: "translateX(40px)" },
+          "100%": { opacity: 1, transform: "translateX(0)" },
+        },
+        slideDown: {
+          "0%": { opacity: 0, transform: "translateY(-30px)" },
+          "100%": { opacity: 1, transform: "translateY(0)" },
+        },
+        slideUp: {
+          "0%": { opacity: 1, transform: "translateY(0)" },
+          "100%": { opacity: 0, transform: "translateY(-30px)" },
+        },
       },
       animation: {
         fadeIn: "fadeIn var(--fade-duration, 0.5s) ease-out",
+        slideLeft: "slideLeft 0.4s ease-out",
+        slideDown: "slideDown 0.4s ease-out",
+        slideUp: "slideUp 0.4s ease-out",
       },
     },
   },

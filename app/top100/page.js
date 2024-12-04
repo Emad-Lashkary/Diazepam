@@ -41,16 +41,32 @@ export default function Page() {
         controversies surrounding them.
       </p>
       <AlbumsList />
-      <p
-        style={{ "--fade-duration": "1.5s" }}
-        className="animate-fadeIn mt-4 sm:text-md text-sm text-primary_100 tracking-wider bg-primary_900/70 px-6 py-4 rounded-lg"
-      >
-        These are my top metal albums of 2024. Albums released in December 2024
-        will be included in the 2025 list. Some rankings might be unpopular—for
-        instance, Knocked Loose at 70th or Poppy sharing a spot with Opeth—but
-        as I mentioned, this is my personal ranking and not a critical
-        assessment. I hope you enjoy exploring these albums as much as I did!
-      </p>
+      <div className="flex flex-col  bg-primary_900/70 rounded-lg">
+        <p
+          style={{ "--fade-duration": "1.5s" }}
+          className="animate-fadeIn mt-4 sm:text-base text-sm text-primary_100 tracking-wider px-6 py-4 "
+        >
+          These are my top metal albums of 2024. Albums released in December
+          2024 will be included in the 2025 list. Some rankings might be
+          unpopular, for instance, Knocked Loose at 70th or Poppy sharing a spot
+          with Opeth, but as I mentioned, this is my personal ranking and not a
+          critical assessment. I hope you enjoy exploring these albums as much
+          as I did!
+        </p>
+        <div className="flex gap-2 justify-center items-center px-10 py-10">
+          <span className="tracking-widest text-lg border-b-2 border-[#1DB954] p-2 hover:px-4 transition-all">
+            Listen all in one playlist :
+          </span>
+          <a
+            href="https://open.spotify.com/playlist/3jlxokPhhEpuwjGWyoQkpC?si=bbb90d80284046cc"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#1DB954] text-primary_100 py-3 px-6 rounded-full hover:bg-[#1DB954]/60 transition duration-300"
+          >
+            Spotify
+          </a>
+        </div>
+      </div>
       <ScrollToTopButton />
     </div>
   );

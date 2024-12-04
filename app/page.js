@@ -36,6 +36,13 @@ export default function Home() {
             <FaArrowRight />
             My 2024 Top 100 album rank
           </Link>
+          <Link
+            href="/topEps"
+            className="flex flex-row gap-2 items-center bg-primary_300/50 text-primary_900 sm:text-lg text-sm font-medium px-5 py-3 h-full rounded-md hover:bg-primary_300/60 transition-all"
+          >
+            <FaArrowRight />
+            My 2024 Top 100 Eps rank
+          </Link>
           <div className="flex flex-row gap-2 items-center bg-primary_300/50 text-primary_900 sm:text-lg text-sm font-medium px-5 py-3 h-full rounded-md hover:bg-primary_300/60 transition-all">
             <FaArrowRight />
             My All time fav albums

@@ -1,6 +1,7 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+
 import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
 
 function Album({
   artist,
@@ -21,7 +22,7 @@ function Album({
       ([entry]) => {
         setIsVisible(entry.isIntersecting);
       },
-      { threshold: 0.1 } // Adjust threshold as needed
+      { threshold: 0.1 }
     );
 
     if (albumRef.current) {
@@ -38,13 +39,13 @@ function Album({
   const getBackgroundColor = (rank) => {
     switch (rank) {
       case "1":
-        return "bg-yellow-500/80"; // Gold
+        return "bg-yellow-500/80 scale-105 sm:hover:scale-[1.06] border-4 border-yellow-400"; // Gold
       case "2":
       case "3":
-        return "bg-gray-400/80"; // Silver
+        return "bg-gray-400/80 border-4 border-gray-300"; // Silver
       case "4":
       case "5":
-        return "bg-yellow-700/80"; // Bronze
+        return "bg-yellow-700/80 border-4 border-yellow-600"; // Bronze
       default:
         return "bg-primary_800/80"; // Default background color
     }
@@ -65,6 +66,7 @@ function Album({
             src={cover}
             alt={`${album} cover`}
             fill
+            quality={50}
             className="rounded-lg hover:scale-105 transition-all"
           />
         </div>

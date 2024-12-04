@@ -38,6 +38,8 @@ export const albums = [
       "https://cdn2.albumoftheyear.org/375x/album/688127-the-poetic-edda_0046.jpg",
     spotifyLink: "https://open.spotify.com/album/3AO82S43rn68Vk4FLgNXKp",
     genres: ["Deathcore", "Symphonic Deathcore", "Neoclassical Metal"],
+    type: "ep",
+    epRank: "1",
   },
   {
     artist: "Fit for an Autopsy",
@@ -248,6 +250,8 @@ export const albums = [
       "https://cdn2.albumoftheyear.org/375x/album/1125106-heaven-let-them-die_151041.jpg",
     spotifyLink: "https://open.spotify.com/album/5pdSJTWNlQj6RJbYPgTFGZ",
     genres: ["Metalcore", "Deathcore"],
+    type: "ep",
+    epRank: "2",
   },
   {
     artist: "156/Silence",
@@ -297,6 +301,8 @@ export const albums = [
     spotifyLink:
       "https://open.spotify.com/album/2pdbIE7lO5QMb2dDh0tKRZ?si=Dkssoz3TR8W9eZ4Xy_05NQ",
     genres: ["Deathcore"],
+    type: "ep",
+    epRank: "3",
   },
   {
     artist: "Mitochondrion",
@@ -334,6 +340,8 @@ export const albums = [
     spotifyLink:
       "https://open.spotify.com/album/6mXbBnsjq2mNPO10t9IAPp?si=Gk0DkhDsRECmZBrCOhKWuQ",
     genres: ["Deathcore"],
+    type: "ep",
+    epRank: "4",
   },
   {
     artist: "Ingested",
@@ -434,6 +442,8 @@ export const albums = [
       "https://cdn2.albumoftheyear.org/375x/album/1013550-an-end-to-everything_055503.jpg",
     spotifyLink: "https://open.spotify.com/album/4v2BDAKl8BuCw8v2wdJRmz",
     genres: ["Progressive Death Metal"],
+    type: "ep",
+    epRank: "5",
   },
   {
     artist: "Oranssi Pazuzu",
@@ -497,6 +507,8 @@ export const albums = [
     spotifyLink:
       "https://open.spotify.com/album/4iZM0ieSYmfdxaPrKceTu5?si=bKIfH24lQYaqmEjQiirUXw",
     genres: ["Melodic Death Metal"],
+    type: "ep",
+    epRank: "6",
   },
   {
     artist: "Boundaries",
@@ -534,6 +546,8 @@ export const albums = [
     spotifyLink:
       "https://open.spotify.com/album/5ijgDtPKlu1NUDEaADPvzl?si=qYAAoc1FTAWmUR9-OZOwKQ",
     genres: ["Blackened Sludge Metal"],
+    type: "ep",
+    epRank: "7",
   },
   {
     artist: "Imminence",
@@ -718,6 +732,8 @@ export const albums = [
     spotifyLink:
       "https://open.spotify.com/album/25a3xkHUh4myBSbuWldXZc?si=lRwOrDzuSi-43tNw0_88iA",
     genres: ["Melodic Death Metal"],
+    type: "ep",
+    epRank: "8",
   },
   {
     artist: "Melted Bodies",
@@ -916,6 +932,8 @@ export const albums = [
     cover: "https://cdn2.albumoftheyear.org/375x/album/981914-mare_160049.jpg",
     spotifyLink: "https://open.spotify.com/album/7MDMBadUvE61SEwGapi43t",
     genres: ["Avant-Garde Metal"],
+    type: "ep",
+    epRank: "9",
   },
   {
     artist: "Alcest",
@@ -965,6 +983,8 @@ export const albums = [
       "https://cdn2.albumoftheyear.org/375x/album/844693-the-death-and-birth-of-an-angel_131524.jpg",
     spotifyLink: "https://open.spotify.com/album/7IqFNvvRivT4ZNti8mJcm7",
     genres: ["Metalcore"],
+    type: "ep",
+    epRank: "10",
   },
   {
     artist: "Caligula's Horse",
