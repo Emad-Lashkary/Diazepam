@@ -21,10 +21,11 @@ export default function About() {
         Here, you will find meticulously curated lists of top albums, EPs, and
         more. My goal is to provide a comprehensive and engaging resource for
         metal enthusiasts. I aim to cover a wide spectrum of metal subgenres,
-        ensuring there's something for every fan. Whether you're into classic
-        metal, modern metalcore, or the most obscure subgenres, you'll find
-        something that resonates with your taste. Additionally, I share
-        insights, reviews, and updates to keep you informed and entertained.
+        ensuring there&apos;s something for every fan. Whether you&apos;re into
+        classic metal, modern metalcore, or the most obscure subgenres,
+        you&apos;ll find something that resonates with your taste. Additionally,
+        I share insights, reviews, and updates to keep you informed and
+        entertained.
       </p>
       <div className="w-full max-w-3xl grid grid-cols-1 sm:grid-cols-2 gap-8 mb-16">
         <div
@@ -51,8 +52,8 @@ export default function About() {
           </h2>
           <p className="text-primary_300 text-center">
             Each list is thoughtfully curated to include the best of metal
-            music. From the latest releases to timeless classics, you'll find a
-            wide variety of top picks.
+            music. From the latest releases to timeless classics, you&apos;ll
+            find a wide variety of top picks.
           </p>
         </div>
         <div
@@ -79,8 +80,8 @@ export default function About() {
           </h2>
           <p className="text-primary_300 text-center">
             Gain access to exclusive insights into the metal music scene. From
-            interviews with artists to behind-the-scenes looks, I'm dedicated to
-            bringing you closer to the music you love.
+            interviews with artists to behind-the-scenes looks, I&apos;m
+            dedicated to bringing you closer to the music you love.
           </p>
         </div>
       </div>
