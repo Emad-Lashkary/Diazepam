@@ -1,7 +1,7 @@
-import { albums } from "../_lib/albums";
-import Album from "./Album";
+import { rapAlbums as albums } from "../_lib/albums";
+import Album from "../_components/Album";
 
-function AlbumsList() {
+function RapList() {
   return (
     <div className="mt-8 px-2">
       {albums
@@ -25,4 +25,4 @@ function AlbumsList() {
   );
 }
 
-export default AlbumsList;
+export default RapList;

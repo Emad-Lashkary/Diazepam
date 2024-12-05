@@ -1268,3 +1268,265 @@ export const albums = [
     genres: ["Alternative Rock"],
   },
 ];
+
+export const rapAlbums = [
+  {
+    artist: "Quadeca",
+    album: "SCRAPYARD",
+    rank: "1",
+    myRate: "100",
+    criticsRate: "90",
+    dateRelease: "2024-February-16",
+    cover:
+      "https://cdn2.albumoftheyear.org/750x/album/868978-scrapyard_140214.jpg",
+    spotifyLink:
+      "https://open.spotify.com/album/2uoD60Oip7rq3vjXxZ2VaD?si=47HCcRhDQLOvrKRKteFe_Q",
+    genres: ["Experimental Hip Hop", "Art Pop"],
+  },
+  {
+    artist: "JPEGMAFIA",
+    album: "I LAY DOWN MY LIFE FOR YOU",
+    rank: "2",
+    myRate: "100",
+    criticsRate: "78",
+    dateRelease: "2024-August-1",
+    cover:
+      "https://cdn2.albumoftheyear.org/750x/album/1028788-i-lay-down-my-life-for-you_144318.jpg",
+    spotifyLink:
+      "https://open.spotify.com/album/1ezs1QD5SYQ6LtxpC9y5I2?si=AV4dcDNYSpu_ph22QBxwhQ",
+    genres: ["Experimental Hip Hop", "Hardcore Hip Hop"],
+  },
+  {
+    artist: "Gao the Arsonist",
+    album: "AND THEY MINE FOR OUR BODIES",
+    rank: "3",
+    myRate: "100",
+    criticsRate: "82",
+    dateRelease: "2024-October-18",
+    cover:
+      "https://cdn2.albumoftheyear.org/750x/album/1079995-and-they-mine-for-our-bodies_203935.jpg",
+    spotifyLink:
+      "https://open.spotify.com/album/6PwC4A9kdUcsxdT0C9UO6p?si=hqjN3uLRSPaaRilzpQH-rg",
+    genres: ["Experimental Hip Hop", "Emo Rap", "Industrial Hip Hop"],
+  },
+  {
+    artist: "Vince Staples",
+    album: "Dark Times",
+    rank: "4",
+    myRate: "85",
+    criticsRate: "82",
+    dateRelease: "2024-May-24",
+    cover:
+      "https://cdn2.albumoftheyear.org/750x/album/961934-dark-times_205543.jpg",
+    spotifyLink:
+      "https://open.spotify.com/album/30BFY5VHii4PyWqkTubUWX?si=LTfBmv8dQeq2agmZbjRXbg",
+    genres: ["Conscious Hip Hop", "West Coast Hip Hop"],
+  },
+  {
+    artist: "ScHoolboy Q",
+    album: "BLUE LIPS",
+    rank: "5",
+    myRate: "85",
+    criticsRate: "81",
+    dateRelease: "2024-March-1",
+    cover:
+      "https://cdn2.albumoftheyear.org/750x/album/863982-blue-lips_131012.jpg",
+    spotifyLink:
+      "https://open.spotify.com/album/107WsrBqn5xVPgystkziry?si=GDsGgvSIQHGxPAz9JY9dwA",
+    genres: ["West Coast Hip Hop", "Hardcore Hip Hop"],
+  },
+  {
+    artist: "Ka",
+    album: "The Thief Next to Jesus",
+    rank: "6",
+    myRate: "85",
+    criticsRate: "86",
+    dateRelease: "2024-August-19",
+    cover:
+      "https://cdn2.albumoftheyear.org/750x/album/1011890-the-thief-next-to-jesus_181340.jpg",
+    spotifyLink:
+      "https://open.spotify.com/album/4fmC67uHti9BxWUNAUb6wy?si=wpAHTsu1RTusvJ_G7Tq4vA",
+    genres: ["Abstract Hip Hop", "Drumless", "East Coast Hip Hop"],
+  },
+  {
+    artist: "Mach-Hommy",
+    album: "#RICHAXXHAITIAN",
+    rank: "7",
+    myRate: "85",
+    criticsRate: "83",
+    dateRelease: "2024-May-17",
+    cover:
+      "https://cdn2.albumoftheyear.org/750x/album/676662-richaxxhaitian_1025.jpg",
+    spotifyLink:
+      "https://open.spotify.com/album/3akQbvTaRFTiQYZILxVm3E?si=UMOqvK9lT42OdOm2oNDDCg",
+    genres: ["Abstract Hip Hop", "East Coast Hip Hop"],
+  },
+  {
+    artist: "Bladee",
+    album: "Cold Visions",
+    rank: "8",
+    myRate: "85",
+    criticsRate: "67",
+    dateRelease: "2024-April-24",
+    cover:
+      "https://cdn2.albumoftheyear.org/750x/album/938851-coldvisions_174054.jpg",
+    spotifyLink:
+      "https://open.spotify.com/album/5fjDXtY8tws1sbPFHw34pL?si=kJ9Yu7jiSfinW6N_vmipnQ",
+    genres: ["Rage", "Tread"],
+  },
+  {
+    artist: "Lupe Fiasco",
+    album: "Samurai",
+    rank: "9",
+    myRate: "85",
+    criticsRate: "81",
+    dateRelease: "2024-June-28",
+    cover:
+      "https://cdn2.albumoftheyear.org/750x/album/939552-samurai_112616.jpg",
+    spotifyLink:
+      "https://open.spotify.com/album/1O6d4cNuUV78GeXv7hgr4e?si=50GfAqq7SL2zy-epnQKiNg",
+    genres: ["Jazz Rap", "Abstract Hip Hop"],
+  },
+  {
+    artist: "DC The Don",
+    album: "REBIRTH",
+    rank: "10",
+    myRate: "80",
+    criticsRate: "76",
+    dateRelease: "2024-October-23",
+    cover:
+      "https://cdn2.albumoftheyear.org/750x/album/702078-rebirth_130428.jpg",
+    spotifyLink:
+      "https://open.spotify.com/album/3bvzvApxQGgI1VX4jSD86G?si=DX3qMHeASD-88X64sHCygQ",
+    genres: ["Pop Rap", "Trap"],
+  },
+  {
+    artist: "Tyler, The Creator",
+    album: "CHROMAKOPIA",
+    rank: "11",
+    myRate: "80",
+    criticsRate: "83",
+    dateRelease: "2024-October-28",
+    cover:
+      "https://cdn2.albumoftheyear.org/750x/album/1104481-chromakopia_090343.jpg",
+    spotifyLink:
+      "https://open.spotify.com/album/0U28P0QVB1QRxpqp5IHOlH?si=RB3gsXRQTp-GKLe6MO2rJg",
+    genres: ["Experimental Hip Hop", "West Coast Hip Hop"],
+  },
+  {
+    artist: "Future & Metro Boomin",
+    album: "WE DON'T TRUST YOU",
+    rank: "12",
+    myRate: "80",
+    criticsRate: "62",
+    dateRelease: "2024-March-22",
+    cover:
+      "https://cdn2.albumoftheyear.org/750x/album/896934-we-dont-trust-you_143101.jpg",
+    spotifyLink:
+      "https://open.spotify.com/album/4iqbFIdGOTzXeDtt9owjQn?si=DLwua_LQTg-qTy6r0tn-0w",
+    genres: ["Trap", "Southern Hip Hop"],
+  },
+  {
+    artist: "Doechii",
+    album: "Alligator Bites Never Heal",
+    rank: "13",
+    myRate: "80",
+    criticsRate: "74",
+    dateRelease: "2024-August-30",
+    cover:
+      "https://cdn2.albumoftheyear.org/750x/album/1046815-alligator-bites-never-heal_173058.jpg",
+    spotifyLink:
+      "https://open.spotify.com/album/60UzB8mOCMpc7xkuJE6Bwc?si=3oKWdNMkRKKAWfm42mG81Q",
+    genres: ["Southern Hip Hop", "Boom Bap"],
+  },
+  {
+    artist: "MIKE & Tony Seltzer",
+    album: "Pinball",
+    rank: "14",
+    myRate: "80",
+    criticsRate: "80",
+    dateRelease: "2024-March-6",
+    cover:
+      "https://cdn2.albumoftheyear.org/750x/album/893168-pinball_132926.jpg",
+    spotifyLink:
+      "https://open.spotify.com/album/5gHqM8u3IclJ1ZV6q309OW?si=poOTH0_KT9etIGHK2vjFUw",
+    genres: ["Abstract Hip Hop", "Trap", "East Coast Hip Hop"],
+  },
+  {
+    artist: "Denzel Curry",
+    album: "KING OF THE MISCHIEVOUS SOUTH",
+    rank: "15",
+    myRate: "80",
+    criticsRate: "77",
+    dateRelease: "2024-November-15",
+    cover:
+      "https://cdn2.albumoftheyear.org/750x/album/1041160-king-of-the-mischievous-south-vol-2-deluxe_231238.jpg",
+    spotifyLink:
+      "https://open.spotify.com/album/1OUX2HxH2tyqyHMALnYbnG?si=4PvliPrLSOSxPxeYw1sV-A",
+    genres: ["Southern Hip Hop", "Trap", "Memphis Rap"],
+  },
+  {
+    artist: "Yeat",
+    album: "2093",
+    rank: "16",
+    myRate: "80",
+    criticsRate: "65",
+    dateRelease: "2024-February-17",
+    cover:
+      "https://cdn2.albumoftheyear.org/750x/album/878483-2093-p2_120134.jpg",
+    spotifyLink:
+      "https://open.spotify.com/album/7aUeYDjGYo8wMKcpeGFRbg?si=2ghBt7OXTZS-kCSt_peidA",
+    genres: ["Experimental Hip Hop", "Rage", "Industrial Hip Hop"],
+  },
+  {
+    artist: "Boldy James & Conductor Williams",
+    album: "Across The Tracks",
+    rank: "17",
+    myRate: "75",
+    criticsRate: "78",
+    dateRelease: "2024-June-28",
+    cover:
+      "https://cdn2.albumoftheyear.org/750x/album/965077-across-the-tracks_124057.jpg",
+    spotifyLink:
+      "https://open.spotify.com/album/4vGxWRaA3iG6w8st1eOtlt?si=fTJql4HVQmSNZZa9ygnshg",
+    genres: ["Gangsta Rap", "Boom Bap", "Coke Rap"],
+  },
+  {
+    artist: "Kendrick Lamar",
+    album: "GNX",
+    rank: "18",
+    myRate: "75",
+    criticsRate: "87",
+    dateRelease: "2024-November-22",
+    cover: "https://cdn2.albumoftheyear.org/750x/album/1139965-gnx_174958.jpg",
+    spotifyLink:
+      "https://open.spotify.com/album/0hvT3yIEysuuvkK73vgdcW?si=RBzaR9b8RTCec-VsvEsIfQ",
+    genres: ["West Coast Hip Hop", "Trap"],
+  },
+  {
+    artist: "Logic",
+    album: "Ultra 85",
+    rank: "19",
+    myRate: "75",
+    criticsRate: "85",
+    dateRelease: "2024-August-9",
+    cover:
+      "https://cdn2.albumoftheyear.org/750x/album/833847-ultra-85_171909.jpg",
+    spotifyLink:
+      "https://open.spotify.com/album/6vVOpqIXPbM9vZWzesdTax?si=DkDCGU1gQUCv13aHH45LbA",
+    genres: ["Boom Bap", "East Coast Hip Hop", "Conscious Hip Hop"],
+  },
+  {
+    artist: "MAVI",
+    album: "shadowbox",
+    rank: "20",
+    myRate: "75",
+    criticsRate: "80",
+    dateRelease: "2024-August-9",
+    cover:
+      "https://cdn2.albumoftheyear.org/750x/album/990020-shadowbox_142521.jpg",
+    spotifyLink:
+      "https://open.spotify.com/album/3rGKeVhGWOwBzodSU6zBXQ?si=0JshpnV2S3y0OjRoQy6eKQ",
+    genres: ["Abstract Hip Hop", "Conscious Hip Hop"],
+  },
+];

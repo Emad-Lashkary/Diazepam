@@ -2,7 +2,13 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { FaHome, FaListUl, FaEnvelope, FaInfoCircle } from "react-icons/fa";
+import {
+  FaHome,
+  FaListUl,
+  FaEnvelope,
+  FaInfoCircle,
+  FaCommentDots,
+} from "react-icons/fa";
 import { TiThMenu } from "react-icons/ti";
 import { CiMenuKebab } from "react-icons/ci";
 
@@ -60,7 +66,7 @@ function Nav() {
         </div>
       </button>
       {isOpen && (
-        <div className="absolute top-full right-0 mt-2 w-48 rounded-md shadow-lg z-50 bg-gradient-to-r from-primary_700 to-primary_900 transition-all duration-300 animate-slideLeft">
+        <div className="absolute top-full right-0 mt-2 w-48 rounded-l-lg shadow-lg z-50 bg-gradient-to-r from-primary_700 to-primary_900 transition-all duration-300 animate-slideLeft">
           <ul className="flex flex-col px-1">
             <NavItem href="/" icon={FaHome} label="Home" onClick={closeNav} />
             <NavItem
@@ -79,6 +85,12 @@ function Nav() {
               href="/about"
               icon={FaInfoCircle}
               label="About"
+              onClick={closeNav}
+            />
+            <NavItem
+              href="/feedback"
+              icon={FaCommentDots}
+              label="Feedback"
               onClick={closeNav}
             />
           </ul>

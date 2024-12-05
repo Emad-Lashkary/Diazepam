@@ -1,4 +1,4 @@
-import AlbumsList from "../_components/AlbumsList";
+import AlbumsList from "./AlbumsList";
 import { email, telegram } from "../_lib/vars";
 import ScrollToTopButton from "../_components/ScrollToTopButton";
 import { Suspense } from "react";
