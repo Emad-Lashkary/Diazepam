@@ -39,7 +39,7 @@ function ContactLink({ href, icon: Icon, label }) {
 export default function Page() {
   return (
     <div className="min-h-screen bg-primary_900/90 text-primary_100 flex flex-col items-center py-14 px-4 sm:px-20">
-      <h1 className="text-5xl font-extrabold mb-10 animate-fadeIn">
+      <h1 className="sm:text-5xl text-4xl font-extrabold mb-10 animate-fadeIn">
         Contact Me
       </h1>
       <p className="text-lg text-primary_300 mb-12 max-w-3xl text-center animate-slideLeft">

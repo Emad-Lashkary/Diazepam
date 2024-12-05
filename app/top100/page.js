@@ -3,6 +3,7 @@ import { email, telegram } from "../_lib/vars";
 import ScrollToTopButton from "../_components/ScrollToTopButton";
 import { Suspense } from "react";
 import Spinner from "../_components/Spinner";
+import ListOnSpotify from "../_components/ListOnSpotify";
 
 export const metadata = {
   title: "Top 100 | Diazepam",
@@ -23,7 +24,7 @@ export default function Page() {
   return (
     <div
       id="scrollContainer"
-      className="bg-primary_900/70 sm:h-[82vh] h-[85vh] px-6 sm:px-56 py-4 overflow-scroll no-scrollbar flex flex-col items-center relative"
+      className="bg-primary_900/70 h-full px-6 sm:px-56 py-4 overflow-scroll no-scrollbar flex flex-col items-center relative"
     >
       <h3 className="animate-fadeIn sm:text-xl text-base text-primary_100 tracking-wider">
         This is my personal ranking of the best rock and metal albums of 2024.
@@ -57,19 +58,7 @@ export default function Page() {
           critical assessment. I hope you enjoy exploring these albums as much
           as I did!
         </p>
-        <div className="flex gap-2 justify-center items-center px-10 py-10">
-          <span className="tracking-widest text-lg border-b-2 border-[#1DB954] p-2 hover:px-4 transition-all">
-            Listen all in one playlist :
-          </span>
-          <a
-            href="https://open.spotify.com/playlist/3jlxokPhhEpuwjGWyoQkpC?si=bbb90d80284046cc"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-[#1DB954] text-primary_100 py-3 px-6 rounded-full hover:bg-[#1DB954]/60 transition duration-300"
-          >
-            Spotify
-          </a>
-        </div>
+        <ListOnSpotify href="https://open.spotify.com/playlist/3jlxokPhhEpuwjGWyoQkpC?si=bbb90d80284046cc" />
       </div>
       <ScrollToTopButton />
     </div>

@@ -8,7 +8,7 @@ export default function About() {
   return (
     <div className="min-h-screen bg-primary_900/90 text-primary_100 flex flex-col items-center py-14 px-4 sm:px-20 animate-fadeIn">
       <h1
-        className="text-5xl font-extrabold mb-10 animate-fadeIn"
+        className="sm:text-5xl text-4xl font-extrabold mb-10 animate-fadeIn"
         style={{ "--fade-duration": "0.4s" }}
       >
         About Diazepam
