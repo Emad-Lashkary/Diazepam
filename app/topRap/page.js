@@ -1,7 +1,6 @@
 import ListOnSpotify from "../_components/ListOnSpotify";
 import ScrollToTopButton from "../_components/ScrollToTopButton";
-import { email, telegram } from "../_lib/vars";
-import RapList from "./rapList";
+import RapList from "./RapList";
 
 export const metadata = {
   title: "Top EPs | Diazepam",
