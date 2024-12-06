@@ -76,7 +76,7 @@ function FeaturedAlbums() {
           </Link>
         </div>
         <div className="scale-95 flex flex-col items-center bg-primary_800/90 p-6 rounded-lg shadow-md hover:shadow-xl transition-all transform hover:scale-100">
-          <div className="relative sm:w-64 sm:h-64 w-60 h-60 md:w-48 md:h-48 mb-4 md:mb-0">
+          <div className="relative sm:w-64 sm:h-64 w-60 h-60 md:w-48 md:h-48 mb-4">
             <Image
               src={pop.cover}
               alt={`${pop.album} cover`}
