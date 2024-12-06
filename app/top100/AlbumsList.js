@@ -1,7 +1,7 @@
 import { albums } from "../_lib/albums";
 import Album from "../_components/Album";
 
-function AlbumsList() {
+function AlbumsList({ displayName }) {
   return (
     <div className="mt-8 px-2">
       {albums
@@ -19,6 +19,7 @@ function AlbumsList() {
             cover={album.cover}
             spotifyLink={album.spotifyLink}
             genres={album.genres}
+            displayName={displayName}
           />
         ))}
     </div>

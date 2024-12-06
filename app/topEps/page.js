@@ -31,7 +31,7 @@ export default function Page() {
         free to reach out to me via <A href={email}>email</A> or through the
         link in my <A href={telegram}>Telegram channel</A> bio.
       </h3>
-      <EpsList />
+      <EpsList displayName="ep" />
       <ScrollToTopButton />
       <ListOnSpotify href="https://open.spotify.com/playlist/0BgoEKfqMNU21BXKnSFgPJ?si=cSw7RRXgSlSXxwIolTaTYg" />
     </div>

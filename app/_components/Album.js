@@ -19,6 +19,8 @@ const Album = React.memo(
     const albumRef = useRef(null);
 
     useEffect(() => {
+      const currentRef = albumRef.current;
+
       const observer = new IntersectionObserver(
         ([entry]) => {
           setIsVisible(entry.isIntersecting);
@@ -26,13 +28,13 @@ const Album = React.memo(
         { threshold: 0.1 }
       );
 
-      if (albumRef.current) {
-        observer.observe(albumRef.current);
+      if (currentRef) {
+        observer.observe(currentRef);
       }
 
       return () => {
-        if (albumRef.current) {
-          observer.unobserve(albumRef.current);
+        if (currentRef) {
+          observer.unobserve(currentRef);
         }
       };
     }, []);

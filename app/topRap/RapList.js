@@ -1,7 +1,7 @@
 import { rapAlbums as albums } from "../_lib/albums";
 import Album from "../_components/Album";
 
-function RapList() {
+function RapList({ displayName }) {
   return (
     <div className="mt-8 px-2">
       {albums
@@ -19,6 +19,7 @@ function RapList() {
             cover={album.cover}
             spotifyLink={album.spotifyLink}
             genres={album.genres}
+            displayName={displayName}
           />
         ))}
     </div>

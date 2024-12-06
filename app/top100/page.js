@@ -44,7 +44,7 @@ export default function Page() {
         controversies surrounding them.
       </p>
       <Suspense fallback={<Spinner />}>
-        <AlbumsList />
+        <AlbumsList displayName="albumTop100" />
       </Suspense>
       <div className="flex flex-col  bg-primary_900/70 rounded-lg">
         <p

@@ -1,7 +1,7 @@
 import { albums } from "../_lib/albums";
 import Album from "../_components/Album";
 
-function EpsList() {
+function EpsList({displayName}) {
   const eps = albums.filter((album) => album.type === "ep");
 
   return (
@@ -21,6 +21,7 @@ function EpsList() {
             cover={album.cover}
             spotifyLink={album.spotifyLink}
             genres={album.genres}
+            displayName={displayName}
           />
         ))}
     </div>
