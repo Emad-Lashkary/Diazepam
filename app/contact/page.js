@@ -77,7 +77,7 @@ export default function Page() {
           post.
         </p>
         <a
-          href="/suggest"
+          href="/feedback"
           className="bg-secondaryBase text-primary_100 py-3 px-8 rounded-full hover:bg-secondaryLight transition duration-300"
         >
           Suggest Now

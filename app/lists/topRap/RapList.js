@@ -1,20 +1,18 @@
-import { albums } from "../_lib/albums";
-import Album from "../_components/Album";
+import { rapAlbums as albums } from "../../_lib/albums";
+import Album from "../../_components/Album";
 
-function EpsList({displayName}) {
-  const eps = albums.filter((album) => album.type === "ep");
-
+function RapList({ displayName }) {
   return (
     <div className="mt-8 px-2">
-      {eps
+      {albums
         .slice()
         .reverse()
         .map((album) => (
           <Album
-            key={album.epRank}
+            key={album.rank}
             artist={album.artist}
             album={album.album}
-            rank={album.epRank}
+            rank={album.rank}
             myRate={album.myRate}
             criticsRate={album.criticsRate}
             dateRelease={album.dateRelease}
@@ -28,4 +26,4 @@ function EpsList({displayName}) {
   );
 }
 
-export default EpsList;
+export default RapList;

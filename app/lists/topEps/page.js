@@ -1,6 +1,8 @@
-import ListOnSpotify from "../_components/ListOnSpotify";
-import ScrollToTopButton from "../_components/ScrollToTopButton";
-import RapList from "./RapList";
+import EpsList from "./EpsList";
+import { email, telegram } from "../../_lib/vars";
+import ScrollToTopButton from "../../_components/ScrollToTopButton";
+import ListOnSpotify from "../../_components/ListOnSpotify";
+import LinkToFeedback from "../../_components/LinkToFeedback";
 
 export const metadata = {
   title: "Top EPs | Diazepam",
@@ -24,18 +26,16 @@ export default function Page() {
       className="bg-primary_900/70 h-full px-6 sm:px-56 py-4 overflow-scroll no-scrollbar flex flex-col items-center relative"
     >
       <h3 className="animate-fadeIn sm:text-xl text-base text-primary_100 tracking-wider">
-        A special shoutout to Radmehr for putting together and ranking this
-        incredible list of the top 20 rap albums of 2024. Make sure to check out
-        his channel for more amazing content and insights into the world of
-        music. Visit{" "}
-        <A href="https://t.me/EverythingBurnsDownAroundMe">
-          Radmehr&apos;s Channel
-        </A>
-        .
+        This is my personal ranking of the best rock and metal EPs of 2024. My
+        selections are entirely based on my own taste and not on technical
+        critique. I would love to hear your thoughts and see your own list! Feel
+        free to reach out to me via <A href={email}>email</A> or through the
+        link in my <A href={telegram}>Telegram channel</A> bio.
       </h3>
-      <RapList displayName="rapAlbum" />
+      <EpsList displayName="ep" />
       <ScrollToTopButton />
       <ListOnSpotify href="https://open.spotify.com/playlist/0BgoEKfqMNU21BXKnSFgPJ?si=cSw7RRXgSlSXxwIolTaTYg" />
+      <LinkToFeedback />
     </div>
   );
 }

@@ -38,25 +38,25 @@ export default function Page() {
       </p>
       <div className="w-full max-w-3xl grid grid-cols-1 sm:grid-cols-2 sm:gap-8 animate-slideLeft">
         <ListLink
-          href="/top100"
+          href="/lists/top100"
           icon={GiPodiumWinner}
           title="Top 100 Albums"
           description="A comprehensive list of my favorite 100 albums of 2024, spanning various metal genres."
         />
         <ListLink
-          href="/topEps"
+          href="/lists/topEps"
           icon={FaCompactDisc}
           title="Top EPs"
           description="An exclusive list of the best EPs released in 2024, showcasing emerging talents and unique sounds."
         />
         <ListLink
-          href="/topPop"
+          href="/lists/topPop"
           icon={FaHeadphonesAlt}
           title="Top Pop Albums"
           description="The top pop albums that defined the year 2024, with catchy tunes and memorable performances."
         />
         <ListLink
-          href="/topRap"
+          href="/lists/topRap"
           icon={GiMicrophone}
           title="Top Rap Albums"
           description="Highlighting the most impactful rap albums of 2024, featuring powerful lyrics and groundbreaking beats."

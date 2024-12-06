@@ -52,7 +52,7 @@ const Recommendations = () => {
       </h2>
       <SortButtons sortOrder={sortOrder} setSortOrder={setSortOrder} />
       {sortedRecommendations.length > 0 ? (
-        <ul className="p-6 rounded-lg shadow-md w-full mx-auto mt-8 max-h-96 overflow-y-scroll">
+        <ul className="p-6 rounded-lg shadow-md w-full mx-auto mt-8 max-h-80 overflow-y-scroll">
           {sortedRecommendations.map((recommendation, index) => (
             <li key={index} className="mb-6 w-full">
               <p className="text-secondaryLighter text-sm">

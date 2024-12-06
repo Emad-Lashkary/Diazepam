@@ -1,5 +1,5 @@
-import { albums } from "../_lib/albums";
-import Album from "../_components/Album";
+import { albums } from "../../_lib/albums";
+import Album from "../../_components/Album";
 
 function AlbumsList({ displayName }) {
   return (

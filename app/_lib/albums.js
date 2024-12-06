@@ -1530,3 +1530,41 @@ export const rapAlbums = [
     genres: ["Abstract Hip Hop", "Conscious Hip Hop"],
   },
 ];
+
+export const popAlbums = [
+  {
+    artist: "Charli xcx",
+    album: "BRAT",
+    rank: "1",
+    myRate: "100",
+    criticsRate: "90",
+    dateRelease: "2024-June-7",
+    cover: "https://cdn2.albumoftheyear.org/375x/album/887267-brat_141745.jpg",
+    spotifyLink: "https://open.spotify.com/album/2lIZef4lzdvZkiiCzvPKj7",
+    genres: ["Electropop", "Bubblegum Bass", "Dance-Pop"],
+  },
+  {
+    artist: "Fontaines D.C.",
+    album: "Romance",
+    rank: "2",
+    myRate: "90",
+    criticsRate: "89",
+    dateRelease: "2024-August-23",
+    cover:
+      "https://cdn2.albumoftheyear.org/375x/album/931219-romance_191815.jpg",
+    spotifyLink: "https://open.spotify.com/album/287QQ922OsJYh8aFNGdJG5",
+    genres: ["Indie Rock", "Post-Britpop", "Post-Punk Revival"],
+  },
+  {
+    artist: "Justin Timberlake",
+    album: "Everything I Thought It Was",
+    rank: "3",
+    myRate: "80",
+    criticsRate: "49",
+    dateRelease: "2024-March-15",
+    cover:
+      "https://cdn2.albumoftheyear.org/375x/album/851614-everything-i-thought-it-was_172912.jpg",
+    spotifyLink: "https://open.spotify.com/album/44e3xckIbDMtFm8jeZLLZ7",
+    genres: ["Dance-Pop", "Contemporary R&B", "Nu-Disco"],
+  },
+];

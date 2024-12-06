@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import { aoty, telegram } from "./_lib/vars";
+import FeaturedAlbums from "./_components/FeaturedAlbums";
 
 export const metadata = {
   title: "Diazepam",
@@ -8,8 +9,8 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className="w-full h-[100%] flex flex-col items-center p-5 sm:px-12 bg-gradient-to-b from-primary_900/50 via-primary_900/70 to-primary_950/90 overflow-scroll no-scrollbar">
-      <h2 className="sm:text-5xl text-2xl pt-10 text-primary_100 sm:tracking-widest tracking-wide text-center font-extrabold animate-fadeIn">
+    <div className="w-full h-[100%] flex flex-col items-center pb-10 sm:px-12 bg-gradient-to-b from-primary_900/50 via-primary_900/70 to-primary_950/90 overflow-scroll no-scrollbar">
+      <h2 className="sm:text-4xl text-2xl pt-8 text-primary_100 sm:tracking-widest tracking-wide text-center font-extrabold animate-fadeIn">
         Welcome to Diazepam <br /> A Hub for the Metal Music
       </h2>
       <p className="text-lg text-primary_300 mt-4 max-w-3xl text-center animate-slideLeft">
@@ -40,25 +41,25 @@ export default function Home() {
             Telegram Channel
           </a>
           <Link
-            href="/top100"
+            href="/lists/top100"
             className="flex flex-row gap-3 items-center bg-secondaryDarker/80 text-secondaryLighter sm:text-lg text-sm font-medium px-6 py-4 rounded-md hover:bg-secondaryDarker transition-all"
           >
             <FaArrowRight />
             My 2024 Top 100 Albums
           </Link>
           <Link
-            href="/topEps"
+            href="/lists/topEps"
             className="flex flex-row gap-3 items-center bg-primary_700/70 text-primary_100 sm:text-lg text-sm font-medium px-6 py-4 rounded-md hover:bg-primary_700 transition-all"
           >
             <FaArrowRight />
             My 2024 Top EPs
           </Link>
           <Link
-            href="/favorites"
+            href="/lists/topRap"
             className="flex flex-row gap-3 items-center bg-primary_700/70 text-primary_100 sm:text-lg text-sm font-medium px-6 py-4 rounded-md hover:bg-primary_700 transition-all"
           >
             <FaArrowRight />
-            My All Time Fav Albums
+            2024 Top Rap Albums
           </Link>
           <a
             href={aoty}
@@ -69,64 +70,7 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <div className="mt-28 text-center">
-        <h2 className="text-4xl font-bold mb-6">Featured Albums</h2>
-        <p className="text-primary_300 mb-8 max-w-lg mx-auto">
-          Discover some of the standout albums that have defined the metal
-          scene. From legendary releases to modern masterpieces, explore the
-          music that has made a lasting impact.
-        </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="bg-primary_800 p-6 rounded-lg shadow-md hover:shadow-xl transition-all transform hover:scale-105">
-            <h3 className="text-2xl font-semibold text-primary_100 mb-3">
-              Album Title 1
-            </h3>
-            <p className="text-primary_300 mb-4">By Artist Name</p>
-            <p className="text-primary_200 mb-6">
-              A brief description of why this album is featured. Highlight its
-              impact, uniqueness, and any standout tracks.
-            </p>
-            <Link
-              href="/album/1"
-              className="text-secondaryLighter hover:text-secondaryLight transition duration-300"
-            >
-              Learn More
-            </Link>
-          </div>
-          <div className="bg-primary_800 p-6 rounded-lg shadow-md hover:shadow-xl transition-all transform hover:scale-105">
-            <h3 className="text-2xl font-semibold text-primary_100 mb-3">
-              Album Title 2
-            </h3>
-            <p className="text-primary_300 mb-4">By Artist Name</p>
-            <p className="text-primary_200 mb-6">
-              A brief description of why this album is featured. Highlight its
-              impact, uniqueness, and any standout tracks.
-            </p>
-            <Link
-              href="/album/2"
-              className="text-secondaryLighter hover:text-secondaryLight transition duration-300"
-            >
-              Learn More
-            </Link>
-          </div>
-          <div className="bg-primary_800 p-6 rounded-lg shadow-md hover:shadow-xl transition-all transform hover:scale-105">
-            <h3 className="text-2xl font-semibold text-primary_100 mb-3">
-              Album Title 3
-            </h3>
-            <p className="text-primary_300 mb-4">By Artist Name</p>
-            <p className="text-primary_200 mb-6">
-              A brief description of why this album is featured. Highlight its
-              impact, uniqueness, and any standout tracks.
-            </p>
-            <Link
-              href="/album/3"
-              className="text-secondaryLighter hover:text-secondaryLight transition duration-300"
-            >
-              Learn More
-            </Link>
-          </div>
-        </div>
-      </div>
+      <FeaturedAlbums />
       <div className="mt-16 text-center">
         <h2 className="text-4xl font-bold mb-6">Upcoming Features</h2>
         <p className="text-primary_300 mb-8 max-w-lg mx-auto">
@@ -161,7 +105,7 @@ export default function Home() {
           news.
         </p>
         <Link
-          href="/community"
+          href="https://t.me/emdpills"
           className="bg-secondaryBase text-primary_100 py-3 px-8 rounded-full hover:bg-secondaryLight transition duration-300"
         >
           Join Now

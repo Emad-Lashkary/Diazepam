@@ -1,9 +1,10 @@
 import AlbumsList from "./AlbumsList";
-import { email, telegram } from "../_lib/vars";
-import ScrollToTopButton from "../_components/ScrollToTopButton";
+import { email, telegram } from "../../_lib/vars";
+import ScrollToTopButton from "../../_components/ScrollToTopButton";
 import { Suspense } from "react";
-import Spinner from "../_components/Spinner";
-import ListOnSpotify from "../_components/ListOnSpotify";
+import Spinner from "../../_components/Spinner";
+import ListOnSpotify from "../../_components/ListOnSpotify";
+import LinkToFeedback from "../../_components/LinkToFeedback";
 
 export const metadata = {
   title: "Top 100 | Diazepam",
@@ -59,6 +60,7 @@ export default function Page() {
           as I did!
         </p>
         <ListOnSpotify href="https://open.spotify.com/playlist/3jlxokPhhEpuwjGWyoQkpC?si=bbb90d80284046cc" />
+        <LinkToFeedback />
       </div>
       <ScrollToTopButton />
     </div>
