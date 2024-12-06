@@ -98,4 +98,6 @@ const Album = React.memo(
   }
 );
 
+Album.displayName = "Album";
+
 export default Album;
