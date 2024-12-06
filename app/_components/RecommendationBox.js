@@ -1,5 +1,5 @@
-"use client";
 import { useState } from "react";
+import Spinner from "./Spinner";
 
 const RecommendationBox = ({ onNewRecommendation }) => {
   const [formData, setFormData] = useState({
@@ -7,6 +7,7 @@ const RecommendationBox = ({ onNewRecommendation }) => {
     email: "",
     recommendation: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -18,15 +19,7 @@ const RecommendationBox = ({ onNewRecommendation }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    const newRecommendation = {
-      name: formData.name,
-      email: formData.email,
-      recommendation: formData.recommendation,
-    };
-
-    // Optimistically update the UI
-    onNewRecommendation(newRecommendation);
+    setIsSubmitting(true);
 
     // Google Form action URL
     const googleFormActionURL =
@@ -34,9 +27,9 @@ const RecommendationBox = ({ onNewRecommendation }) => {
 
     // Create a new FormData object and append the form data
     const form = new FormData();
-    form.append("entry.123456789", formData.name); // Replace with actual field ID for name
-    form.append("entry.234567890", formData.email); // Replace with actual field ID for email
-    form.append("entry.345678901", formData.recommendation); // Replace with actual field ID for recommendation
+    form.append("entry.1338380630", formData.name);
+    form.append("entry.563501330", formData.email);
+    form.append("entry.1583647868", formData.recommendation);
 
     try {
       await fetch(googleFormActionURL, {
@@ -44,73 +37,83 @@ const RecommendationBox = ({ onNewRecommendation }) => {
         body: form,
         mode: "no-cors",
       });
+      onNewRecommendation({
+        name: formData.name,
+        email: formData.email,
+        recommendation: formData.recommendation,
+      });
     } catch (error) {
       console.error("Error submitting the form", error);
-      // If there was an error, revert the optimistic update
-      onNewRecommendation(null);
+    } finally {
+      setIsSubmitting(false);
     }
 
     setFormData({ name: "", email: "", recommendation: "" });
   };
 
   return (
-    <div className="bg-primary_900 p-6 rounded-lg shadow-md w-full max-w-md mx-auto mt-8">
-      <h2 className="text-2xl font-bold text-primary_100 mb-4">
-        Send Us Your Recommendations
+    <div className="bg-primary_900 p-6 flex flex-col rounded-lg shadow-md w-full max-w-md mx-auto animate-slideLeft max-h-min py-8">
+      <h2 className="md:text-2xl text-xl font-bold text-primary_100 mb-4 self-center">
+        Add Your Recommendations
       </h2>
-      <form onSubmit={handleSubmit}>
-        <div className="mb-4">
-          <label className="block text-primary_300 mb-2" htmlFor="name">
-            Name
-          </label>
-          <input
-            className="w-full p-3 bg-primary_800 text-primary_100 rounded-md"
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            placeholder="Your Name"
-          />
-        </div>
-        <div className="mb-4">
-          <label className="block text-primary_300 mb-2" htmlFor="email">
-            Email
-          </label>
-          <input
-            className="w-full p-3 bg-primary_800 text-primary_100 rounded-md"
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            placeholder="Your Email"
-          />
-        </div>
-        <div className="mb-4">
-          <label
-            className="block text-primary_300 mb-2"
-            htmlFor="recommendation"
+      {isSubmitting ? (
+        <Spinner />
+      ) : (
+        <form onSubmit={handleSubmit}>
+          <div className="mb-4 w-full">
+            <label className="block text-primary_300" htmlFor="name">
+              Name
+            </label>
+            <input
+              className="w-full p-3 bg-primary_800 text-primary_100 rounded-md"
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              placeholder="Your Name"
+              disabled={isSubmitting}
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-primary_300" htmlFor="email">
+              Email
+            </label>
+            <input
+              className="w-full p-3 bg-primary_800 text-primary_100 rounded-md"
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="Your Email"
+              disabled={isSubmitting}
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-primary_300" htmlFor="recommendation">
+              Recommendation
+            </label>
+            <textarea
+              className="w-full p-3 bg-primary_800 text-primary_100 rounded-md"
+              id="recommendation"
+              name="recommendation"
+              value={formData.recommendation}
+              onChange={handleChange}
+              placeholder="Your Recommendations"
+              rows="3"
+              disabled={isSubmitting}
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            className="bg-secondaryBase text-primary_100 py-3 px-6 rounded-full hover:bg-secondaryLight transition duration-300"
+            disabled={isSubmitting}
           >
-            Recommendation
-          </label>
-          <textarea
-            className="w-full p-3 bg-primary_800 text-primary_100 rounded-md"
-            id="recommendation"
-            name="recommendation"
-            value={formData.recommendation}
-            onChange={handleChange}
-            placeholder="Your Recommendations"
-            rows="5"
-          ></textarea>
-        </div>
-        <button
-          type="submit"
-          className="bg-secondaryBase text-primary_100 py-3 px-6 rounded-full hover:bg-secondaryLight transition duration-300"
-        >
-          Submit
-        </button>
-      </form>
+            Submit
+          </button>
+        </form>
+      )}
     </div>
   );
 };
