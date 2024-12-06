@@ -18,7 +18,7 @@ function FeaturedAlbums() {
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div className="scale-95 flex flex-col items-center bg-primary_800/90 p-6 rounded-lg shadow-md hover:shadow-xl transition-all transform hover:scale-100">
-          <div className="relative sm:w-64 sm:h-64 w-60 h-60 md:w-48 md:h-48 mb-4 md:mb-0">
+          <div className="relative sm:w-64 sm:h-64 w-60 h-60 md:w-48 md:h-48 mb-4">
             <Image
               src={rap.cover}
               alt={`${rap.album} cover`}
@@ -46,7 +46,7 @@ function FeaturedAlbums() {
         </div>
 
         <div className="flex flex-col items-center bg-primary_900 p-6 rounded-lg shadow-md hover:shadow-xl transition-all transform hover:scale-105">
-          <div className="relative sm:w-64 sm:h-64 w-60 h-60 md:w-48 md:h-48 mb-4 md:mb-0">
+          <div className="relative sm:w-64 sm:h-64 w-60 h-60 md:w-48 md:h-48 mb-4">
             <Image
               src={metal.cover}
               alt={`${metal.album} cover`}
