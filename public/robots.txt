@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://diazepam.vercel.app
+
+# Sitemaps
+Sitemap: https://diazepam.vercel.app/sitemap.xml

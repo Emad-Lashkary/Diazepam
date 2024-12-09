@@ -5,6 +5,29 @@ import FeaturedAlbums from "./_components/FeaturedAlbums";
 
 export const metadata = {
   title: "Diazepam",
+  description:
+    "Top 100 Metal albums of 2024. Dive deep into the world of metal music with our curated collections of the finest albums and EPs. Stay tuned for more features and enhancements coming soon!",
+  openGraph: {
+    title: "Diazepam",
+    description:
+      "Top 100 Metal albums of 2024. dive deep into the world of metal",
+    url: "https://diazepam.vercel.app",
+    images: [
+      {
+        url: "https://diazepam.vercel.app/home.jpg",
+        width: 390,
+        height: 219,
+        alt: "A mysterious skull made out of dust and mist. deazepam top 100 background image.",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Diazepam top 100 metal albums of 2024",
+    description:
+      "Top 100 Metal albums of 2024. dive deep into the world of metal",
+    image: "https://diazepam.vercel.app/home.jpg",
+  },
 };
 
 export default function Home() {
