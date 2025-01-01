@@ -1,10 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Diazepam - Metal Music Enthusiasts' Hub
+
+**Diazepam** is a website dedicated to the world of metal music. It serves as a comprehensive resource for metal enthusiasts, featuring meticulously curated lists of top albums, EPs, and more. Whether you're into classic metal, modern metalcore, or the most obscure subgenres, you'll find something that resonates with your taste.
+
+## Table of Contents
+
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Learn More](#learn-more)
+- [Deploy on Vercel](#deploy-on-vercel)
+- [About Diazepam](#about-diazepam)
+- [Top 100 Metal Albums of 2024](#top-100-metal-albums-of-2024)
+- [Join the Community](#join-the-community)
+- [Suggest a List](#suggest-a-list)
+- [License](#license)
+
+## Features
+
+- **Curated Collections**: Thoughtfully curated lists of the best metal music.
+- **Top Picks**: Discover top albums and EPs with detailed descriptions and reviews.
+- **Community Engagement**: Join the community, share your music lists, and suggest new lists.
 
 ## Getting Started
 
-First, run the development server:
+To get a local copy up and running, follow these simple steps.
 
-```bash
+### Prerequisites
+
+Make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/) or [pnpm](https://pnpm.io/) or [bun](https://bun.sh/)
+
+### Installation
+
+1. Clone the repo:
+   ```sh
+   git clone https://github.com/Emad-Lashkary/Diazepam.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd Diazepam
+   ```
+3. Install dependencies:
+   ```sh
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   # or
+   bun install
+   ```
+
+### Running the Development Server
+
+Start the development server:
+```sh
 npm run dev
 # or
 yarn dev
@@ -18,8 +69,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
@@ -31,6 +80,26 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## About Diazepam
+
+Welcome to Diazepam, a space dedicated to the world of metal music. Here, you will find meticulously curated lists of top albums, EPs, and more. My goal is to provide a comprehensive and engaging resource for metal enthusiasts. I aim to cover a wide spectrum of metal subgenres, ensuring there's something for every fan. Whether you're into classic metal, modern metalcore, or the most obscure subgenres, you'll find something that resonates with your taste. Additionally, I share insights, reviews, and updates to keep you informed and entertained.
+
+## Top 100 Metal Albums of 2024
+
+Dive deep into the world of metal music with our curated collections of the finest albums and EPs. Stay tuned for more features and enhancements coming soon!
+
+## Join the Community
+
+Share your own music lists and discover those of others. Be a part of our growing community of music enthusiasts.
+
+## Suggest a List
+
+Have an idea for a new music list? Let me know and I'll consider adding it to the site. Your suggestions help me grow and improve!
+
+## License
+
+Emad Lashkary 2025 ❤
