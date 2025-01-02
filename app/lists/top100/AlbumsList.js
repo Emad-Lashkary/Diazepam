@@ -3,7 +3,7 @@ import Album from "../../_components/Album";
 
 function AlbumsList({ displayName }) {
   return (
-    <div className="mt-8 px-2">
+    <div className="mt-8 px-0">
       {albums
         .slice()
         .reverse()

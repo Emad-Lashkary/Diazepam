@@ -5,7 +5,7 @@ function EpsList({ displayName }) {
   const eps = albums.filter((album) => album.type === "ep");
 
   return (
-    <div className="mt-8 px-2">
+    <div className="mt-8 px-0">
       {eps
         .slice()
         .reverse()

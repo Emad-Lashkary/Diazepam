@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const Album = React.memo(
   ({
@@ -42,13 +42,13 @@ const Album = React.memo(
     const getBackgroundColor = (rank) => {
       switch (rank) {
         case "1":
-          return "bg-yellow-500/80 scale-105 sm:hover:scale-[1.06] border-4 border-yellow-400"; // Gold
+          return "from-yellow-500/70 via-yellow-400/70 to-yellow-500/70"; // Gold
         case "2":
-          return "bg-gray-400/80 border-4 border-gray-300"; // Silver
+          return "from-gray-400/60 via-gray-300/60 to-gray-400/60"; // Silver
         case "3":
-          return "bg-yellow-700/80 border-4 border-yellow-600"; // Bronze
+          return "from-yellow-700/70 via-yellow-600/70 to-yellow-700/70"; // Bronze
         default:
-          return "bg-primary_800/80"; // Default background color
+          return "from-primary_900/80 via-primary_700/80 to-primary_900/80"; // Default background color
       }
     };
 
@@ -56,44 +56,40 @@ const Album = React.memo(
       <div
         ref={albumRef}
         className={`${
-          isVisible ? "animate-fadeIn" : "opacity-0"
+          isVisible ? "animate-slideLeft" : "opacity-0"
         } ${getBackgroundColor(
           rank
-        )} rounded-lg shadow-lg p-6 mb-6 transform transition duration-500 sm:hover:scale-[1.01]`}
+        )} relative flex bg-gradient-to-r rounded-lg shadow-lg mb-8 transform transition duration-500 hover:scale-105`}
       >
-        <div className="flex flex-col md:flex-row items-center">
-          <div className="relative sm:w-64 sm:h-64 w-52 h-52 md:w-48 md:h-48 mb-4 md:mb-0">
-            <Image
-              src={cover}
-              alt={`${album} cover`}
-              fill
-              quality={50}
-              className="rounded-lg hover:scale-105 transition-all"
-            />
-          </div>
-          <div className="flex-1 ml-0 md:ml-6 flex flex-col items-start w-full">
-            <h2 className="sm:text-2xl text-lg sm:font-bold text-primary_100">
-              {rank}- {album}
-            </h2>
-            <h3 className="sm:text-xl text-base text-primary_200">{artist}</h3>
-            <p className="sm:text-sm text-xs text-primary_300 mt-2">
-              Released on: {new Date(dateRelease).toLocaleDateString()}
-            </p>
-            <p className="sm:text-sm text-xs text-primary_300 mt-2">
-              Rank: {rank} | My Rating: {myRate} | Critics Rating: {criticsRate}
-            </p>
-            <p className="sm:text-sm text-xs text-primary_300 mt-2">
-              Genres: {genres.join(", ")}
-            </p>
-            <a
-              href={spotifyLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-[#1DB954] text-primary_100 mt-4 py-2 px-4 rounded-full hover:scale-105 transition duration-300"
-            >
-              Listen on Spotify
-            </a>
-          </div>
+        <div className="relative w-28 h-28 md:w-44 md:h-44 flex-shrink-0">
+          <Image
+            src={cover}
+            alt={`${album} cover`}
+            layout="fill"
+            objectFit="cover"
+            className="rounded-l-lg transform transition duration-500 md:hover:scale-[1.15] scale-110"
+          />
+        </div>
+        <div className="md:p-4 pl-2 py-2 flex flex-col justify-center gap-[3px] w-full">
+          <h2 className="text-sm sm:text-xl font-bold text-primary_100">
+            {rank}. {album}
+          </h2>
+          <h3 className="text-sm sm:text-lg text-primary_200">{artist}</h3>
+          <p className="text-[8px] sm:text-xs tracking-widest text-primary_300">
+            Released on: {new Date(dateRelease).toLocaleDateString()}
+          </p>
+          <p className="text-[9px] sm:text-sm text-primary_300">
+            My Rating: {myRate} | Critics Rating: {criticsRate} | Genres:{" "}
+            {genres.join(", ")}
+          </p>
+          <a
+            href={spotifyLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="absolute bottom-2 left-1/2 transform -translate-x-1/2 translate-y-7 bg-[#1DB954]/90 text-primary_100 py-1 px-4 rounded-full hover:bg-[#1ED760] transition duration-300 w-auto text-center"
+          >
+            Listen on Spotify
+          </a>
         </div>
       </div>
     );
