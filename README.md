@@ -1,4 +1,4 @@
-# Diazepam - Metal Music Enthusiasts' Hub
+# Diazepam - Metal Music Enthusiasts' Hub.
 
 **Diazepam** is a website dedicated to the world of metal music. It serves as a comprehensive resource for metal enthusiasts, featuring meticulously curated lists of top albums, EPs, and more. Whether you're into classic metal, modern metalcore, or the most obscure subgenres, you'll find something that resonates with your taste.
 
